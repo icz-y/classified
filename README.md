@@ -1,12 +1,12 @@
 # classified
-##author
+## author
 zinzi njau
 
-#Overview
+# Overview
 
 Fixers & Cleaners is a satirical, dark comedy-themed web application where users can hypothetically hire famous movie characters for unique "problem-solving" services. From "persuasive negotiations" to "deep cleaning," this website provides a completely fictional yet hilarious way to browse outrageous service options.
 
-#Features
+# Features
 
 Humorous Service Listings – Hire characters like John Wick, Walter White, or The Joker for specific tasks.
 
@@ -24,7 +24,7 @@ CSS – Custom styles, animations, and interactivity
 
 JavaScript – Dynamic updates, fake order tracking, and effects
 
-#Setup Instructions
+# Setup Instructions
 
 Clone or download the repository:
 
@@ -38,11 +38,11 @@ Open index.html in a browser.
 
 Enjoy the absurdity!
 
-#Disclaimer
+# Disclaimer
 
 This website is purely for comedic and entertainment purposes. It does not promote or condone any illegal activities. All references to movie characters are parodies and are not affiliated with their respective franchises.
 
-##Copyright
+## Copyright
 
 © 2025 Fixers & Cleaners. All rights reserved. Unauthorized use or reproduction of any content is strictly prohibited (unless you're a fictional cleaner, then we might look the other way 😉).
 
