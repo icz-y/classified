@@ -24,14 +24,14 @@
         </nav>
     </header>
  <div class="youtube-video">
-        <iframe 
-            width="100%" 
-            height="100%" 
-            src="https://www.youtube.com/embed/DXHhkoY2PvY&list=PL75KMJi36nN89deWfEgEFDcKQpRuD6Cuy&index=7?autoplay=1&mute=1&loop=1&playlist=DXHhkoY2PvY&list=PL75KMJi36nN89deWfEgEFDcKQpRuD6Cuy&index=7" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/DXHhkoY2PvY&list=PL75KMJi36nN89deWfEgEFDcKQpRuD6Cuy&index=7?autoplay=1&mute=1&loop=1&playlist=DXHhkoY2PvY&list=PL75KMJi36nN89deWfEgEFDcKQpRuD6Cuy&index=7&controls=0&modestbranding=1&showinfo=0&rel=0" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
         <div class="video-overlay">
             <h1>Welcome to Fixers & Cleaners</h1>
             <p>Where problems disappear... *poof*.</p>
@@ -140,45 +140,57 @@
             <img src="https://i.pinimg.com/736x/30/26/11/302611ee25086764ce3903eadbe013fb.jpg" alt="Gallery Image 2">
             <img src="https://i.pinimg.com/236x/e6/57/23/e657231f8a629f8a856133ff9ea1873d.jpg" alt="Gallery Image 3">
             <img src="https://i.pinimg.com/236x/b0/8c/ee/b08cee405f24a4782dc67ab7c483f713.jpg" alt="Gallery Image 4">
-             <img src="https://i.pinimg.com/236x/ef/87/f2/ef87f2a6fac85907155aa4fdb4defb7b.jpg" alt="Gallery Image 1">
-            <img src="https://i.pinimg.com/236x/06/32/a8/0632a8ca46c1db35a5a1416cfe0108b0.jpg" alt="Gallery Image 2">
-            <img src="https://i.pinimg.com/236x/21/17/97/211797e5257c4ababd46e00a26387d77.jpg" alt="Gallery Image 3">
-            <img src="https://i.pinimg.com/236x/e8/13/e9/e813e919e580795e134ba273699b10a8.jpg" alt="Gallery Image 4">
-             <img src="gallery1.jpg" alt="Gallery Image 1">
-            <img src="gallery2.jpg" alt="Gallery Image 2">
-            <img src="gallery3.jpg" alt="Gallery Image 3">
-            <img src="gallery4.jpg" alt="Gallery Image 4">
+          
         </div>
     </section>
 
-    <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-            <div class="faq-item">
-                <h3>Is this service legal?</h3>
-                <p>Absolutely! (Disclaimer: This is a fictional service. Please don’t actually hire us for illegal activities.)</p>
-            </div>
-            <div class="faq-item">
-                <h3>Do you offer refunds?</h3>
-                <p>No refunds. Once the problem is solved, it’s solved.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I request a specific specialist?</h3>
-                <p>Yes, but availability depends on their current *assignments*.</p>
-            </div>
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+        <div class="faq-item">
+            <h3>Is this service legal?</h3>
+            <p>Absolutely! (Disclaimer: This is a fictional service. Please don’t actually hire us for illegal activities.)</p>
         </div>
+        <div class="faq-item">
+            <h3>Do you offer refunds?</h3>
+            <p>No refunds. Once the problem is solved, it’s solved. We’re confident you’ll be satisfied with our *hypothetical* results.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I request a specific specialist?</h3>
+            <p>Yes, but availability depends on their current *assignments*. Let us know your preference, and we’ll do our best to accommodate.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How discreet are your services?</h3>
+            <p>Extremely. We operate under the radar, and your secrets are safe with us. No one will ever know you hired us.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What if I’m not satisfied with the results?</h3>
+            <p>We guarantee satisfaction. If you’re not happy, we’ll *hypothetically* revisit the problem until it’s resolved to your liking.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you operate internationally?</h3>
+            <p>Yes, we have specialists worldwide. No problem is too far. Wherever you are, we’ve got you covered.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I cancel my request?</h3>
+            <p>Once a specialist is assigned, cancellations are not possible. Choose wisely! We recommend being absolutely sure before proceeding.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I know my problem is being handled?</h3>
+            <p>You’ll receive updates through our secure, untraceable communication channels. We’ll keep you informed every step of the way.</p>
+        </div>
+    </div>
+</section>
     </section>
-
     <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" id="submit-button">Send Message</button>
+    </form>
+</section>
     <footer>
         <p>Fixers & Cleaners &copy; 2025 | Definitely Not Real | Bail Money Not Included</p>
     </footer>
