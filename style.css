@@ -96,7 +96,64 @@ nav a {
     padding: 15px 30px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 20px;#contact {
+    padding: 60px 20px;
+    background: #333;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    border-left: 5px solid darkred;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+}
+
+#submit-button {
+    background: darkred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    position: relative; /* Required for moving the button */
+}
+
+#submit-button:hover {
+    background: #ff4444;
+}
+
+/* Animation for the "runaway" effect */
+@keyframes runaway {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(20px, -20px); }
+    50% { transform: translate(-20px, 20px); }
+    75% { transform: translate(20px, 20px); }
+    100% { transform: translate(-20px, -20px); }
+}
+
+.runaway-animation {
+    animation: runaway 0.5s ease;
+}
     border-radius: 5px;
     font-size: 18px;
     transition: background 0.3s ease;
@@ -161,7 +218,48 @@ nav a {
     box-sizing: border-box;
     transition: transform 0.5s ease;
 }
+#faq {
+    padding: 60px 20px;
+    background: #333;
+}
 
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; /* Increased space between items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-item {
+    background: #222;
+    padding: 30px; /* Increased padding for larger boxes */
+    border-left: 5px solid darkred;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    min-height: 200px; /* Increased height for longer boxes */
+    width: 3000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.faq-item:hover {
+    transform: translateY(-10px);
+}
+
+.faq-item h3 {
+    font-size: 1.75rem; /* Larger font size for questions */
+    margin: 0 0 15px;
+    color: darkred;
+}
+
+.faq-item p {
+    font-size: 1.1rem; /* Slightly larger font size for answers */
+    margin: 0;
+    line-height: 1.6; /* Improved readability */
+}
 .carousel-button {
     background: darkred;
     color: white;
@@ -222,6 +320,121 @@ form button:hover {
     background: #ff4444;
 }
 
+#contact {
+    padding: 60px 20px;
+    background: #333;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    border-left: 5px solid darkred;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+}
+
+#submit-button {
+    background: darkred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    position: relative; /* Required for moving the button */
+}
+
+#submit-button:hover {
+    background: #ff4444;
+}
+
+/* Animation for the "runaway" effect */
+@keyframes runaway {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(20px, -20px); }
+    50% { transform: translate(-20px, 20px); }
+    75% { transform: translate(20px, 20px); }
+    100% { transform: translate(-20px, -20px); }
+}
+
+.runaway-animation {
+    animation: runaway 0.5s ease;
+}#contact {
+    padding: 60px 20px;
+    background: #333;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    border-left: 5px solid darkred;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+}
+
+#submit-button {
+    background: darkred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    position: relative; /* Required for moving the button */
+}
+
+#submit-button:hover {
+    background: #ff4444;
+}
+
+/* Animation for the "runaway" effect */
+@keyframes runaway {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(20px, -20px); }
+    50% { transform: translate(-20px, 20px); }
+    75% { transform: translate(20px, 20px); }
+    100% { transform: translate(-20px, -20px); }
+}
+
+.runaway-animation {
+    animation: runaway 0.5s ease;
+}
 footer {
     background: #222;
     padding: 20px;
