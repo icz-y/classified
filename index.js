@@ -1,33 +1,24 @@
-const statuses = [
-  "Awaiting Assignment...",
-  "Fixer En Route...",
-  "Job in Progress...",
-  "Cleanup Crew Dispatched...",
-  "Mission Accomplished. No Witnesses.",
-];
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const submitButton = document.getElementById("submit-button");
 
-function updateStatus() {
-  const statusElement = document.getElementById("status");
-  const randomIndex = Math.floor(Math.random() * statuses.length);
-  statusElement.textContent = statuses[randomIndex];
-}
+    if (!name || !email || !message) {
+      event.preventDefault(); // Prevent form submission
 
-// Carousel functionality
-let currentReviewIndex = 0;
-const reviews = document.querySelectorAll(".review");
-const totalReviews = reviews.length;
+      // Add the runaway animation class
+      submitButton.classList.add("runaway-animation");
 
-document.querySelector(".next").addEventListener("click", () => {
-  reviews[currentReviewIndex].style.display = "none";
-  currentReviewIndex = (currentReviewIndex + 1) % totalReviews;
-  reviews[currentReviewIndex].style.display = "block";
-});
-
-document.querySelector(".prev").addEventListener("click", () => {
-  reviews[currentReviewIndex].style.display = "none";
-  currentReviewIndex = (currentReviewIndex - 1 + totalReviews) % totalReviews;
-  reviews[currentReviewIndex].style.display = "block";
-});
-
-// Initialize the first review as visible
-reviews[currentReviewIndex].style.display = "block";
+      // Remove the animation class after it finishes
+      submitButton.addEventListener(
+        "animationend",
+        () => {
+          submitButton.classList.remove("runaway-animation");
+        },
+        { once: true }
+      ); // Ensure the event listener is removed after running once
+    }
+  });
